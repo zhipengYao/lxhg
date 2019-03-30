@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="support/jquery-3.3.1.js" type="text/javascript"></script>
+        <link href="support/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <script src="support/jquery-ui.js" type="text/javascript"></script>
+        
+        <link href="lib/myqq.css" rel="stylesheet" type="text/css"/>
+        <script src="lib/UUID.js" type="text/javascript"></script>
+        <script src="lib/Connector.js" type="text/javascript"></script>
+        <script src="lib/DlgLogin.js" type="text/javascript"></script>
+        <script src="lib/DlgRegister.js" type="text/javascript"></script>
+        <script src="lib/DlgFriends.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                showLoginDialog();
+      //          showRegisterDialog();
+            });
+            
+            function showLoginDialog(){
+                new DlgLogin({
+                    div:"dlg"
+                });
+            }
+            
+  /*           function showRegisterDialog(){
+                new DlgRegister({
+                    div:"dlg"
+                });
+            }
+           */ 
+        </script>
+    </head>
+    <body>
+        <div id="dlg"></div>
+        <div id="dlg1"></div>
+        <div id="dlg2"></div>
+    </body>
+</html>
